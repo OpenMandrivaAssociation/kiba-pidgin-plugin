@@ -14,6 +14,7 @@ BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
 BuildRequires:	pidgin-devel
+BuildRequires:	librsvg-devel
 BuildRequires:	startup-notification-devel
 Requires:	kiba-dock
 Requires:	pidgin
