@@ -1,5 +1,5 @@
 %define svn	722
-%define release %mkrel 0.%{svn}.1
+%define release %mkrel 0.%{svn}.2
 %define fname	kiba-gaim-plugin
 
 Name:		kiba-pidgin-plugin
