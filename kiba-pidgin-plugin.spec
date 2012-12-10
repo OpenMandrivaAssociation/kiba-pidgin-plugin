@@ -1,5 +1,5 @@
 %define svn	722
-%define release %mkrel 0.%{svn}.3
+%define release 0.%{svn}.2
 %define fname	kiba-gaim-plugin
 
 Name:		kiba-pidgin-plugin
@@ -9,8 +9,8 @@ Summary:	Pidgin plugin for Kiba-Dock
 Group:		System/X11
 URL:		http://www.kiba-dock.org/
 Source0:	%{fname}-%{svn}.tar.lzma
+patch0:		kiba-pidgin-plugin.kiba-dock-version.patch
 License:	GPLv2+
-BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
 BuildRequires:	pidgin-devel
@@ -24,6 +24,7 @@ Pidgin plugin for Kiba-Dock.
 
 %prep
 %setup -q -n %{fname}
+%patch0 -p1 -b .kiba-dock-version
 
 %build
 sh autogen.sh -V
@@ -31,15 +32,24 @@ sh autogen.sh -V
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 %find_lang pidgin-kiba-plugin
-
-%clean
-rm -rf %{buildroot}
 
 %files -f pidgin-kiba-plugin.lang
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog 
 %{_libdir}/pidgin/libkiba.*
+
+
+
+%changelog
+* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 0.1-0.722.2mdv2009.1
++ Revision: 350240
+- 2009.1 rebuild
+
+* Thu Mar 06 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.722.1mdv2008.1
++ Revision: 181023
+- buildrequires librsvg-devel
+- import kiba-pidgin-plugin
+
 

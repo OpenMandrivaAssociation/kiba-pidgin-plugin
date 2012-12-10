@@ -1,0 +1,11 @@
+--- kiba-gaim-plugin/configure.in.kiba-dock-version	2008-03-05 22:43:47.000000000 +0300
++++ kiba-gaim-plugin/configure.in	2012-11-12 20:27:20.216624966 +0400
+@@ -8,7 +8,7 @@ m4_define(pidgin_kiba_release,	0)
+ 
+ # lower and upper-bound versions of Meanwhile
+ m4_define(kiba_version_min,	9999)
+-m4_define(kiba_version_max,	9999)
++m4_define(kiba_version_max,	9999.0.0)
+ 
+ # lower and upper-bound versions of Pidgin
+ m4_define(pidgin_version_min,		1.2.0)
