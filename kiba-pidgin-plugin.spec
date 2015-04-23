@@ -1,5 +1,5 @@
 %define svn	722
-%define release 0.%{svn}.2
+%define release 0.%{svn}.4
 %define fname	kiba-gaim-plugin
 
 Name:		kiba-pidgin-plugin
@@ -39,17 +39,3 @@ sh autogen.sh -V
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog 
 %{_libdir}/pidgin/libkiba.*
-
-
-
-%changelog
-* Fri Mar 06 2009 Antoine Ginies <aginies@mandriva.com> 0.1-0.722.2mdv2009.1
-+ Revision: 350240
-- 2009.1 rebuild
-
-* Thu Mar 06 2008 Adam Williamson <awilliamson@mandriva.org> 0.1-0.722.1mdv2008.1
-+ Revision: 181023
-- buildrequires librsvg-devel
-- import kiba-pidgin-plugin
-
-
