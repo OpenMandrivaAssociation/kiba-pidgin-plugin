@@ -7,7 +7,7 @@ Version:	0.1
 Release:	%{release}
 Summary:	Pidgin plugin for Kiba-Dock
 Group:		System/X11
-URL:		http://www.kiba-dock.org/
+URL:		https://www.kiba-dock.org/
 Source0:	%{fname}-%{svn}.tar.lzma
 patch0:		kiba-pidgin-plugin.kiba-dock-version.patch
 License:	GPLv2+
