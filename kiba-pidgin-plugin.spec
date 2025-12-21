@@ -11,6 +11,11 @@ URL:		https://www.kiba-dock.org/
 Source0:	%{fname}-%{svn}.tar.lzma
 patch0:		kiba-pidgin-plugin.kiba-dock-version.patch
 License:	GPLv2+
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
 BuildRequires:	pidgin-devel
